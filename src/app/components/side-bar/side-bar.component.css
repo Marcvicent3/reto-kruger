@@ -1,0 +1,52 @@
+.color-fondo {
+    background-color: #E25E37;
+}
+.name-color{
+    color: white !important;
+}
+
+p {
+    font: bold;
+    color: white;
+}
+
+.brand-image {
+    background-color: white;
+}
+
+i {
+    color: white;
+}
+
+.usuario {
+    width: 170px;
+}
+
+.txt-Usuario {
+    font-size: 22px;
+}
+
+.sub-menu {
+    font-size: 13.5px;
+    padding-left: 15px;
+}
+
+.sub-menu2 {
+    font-size: 12px;
+    padding-left: 25px;
+}
+
+.link-activo {
+    background-color: #007BFF;
+    font-weight: bold;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.not-active {
+    pointer-events: none;
+    cursor: default;
+    display: none;
+}

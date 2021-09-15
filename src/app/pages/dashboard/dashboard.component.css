@@ -1,0 +1,31 @@
+.container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    height: 60vh;
+}
+
+.img-welcome {
+    height: 40vh;
+    box-shadow: 0 0 5px rgb(116, 116, 116);
+    cursor: pointer;
+    transition: all 2s;
+}
+
+.img-welcome:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 0 15px rgb(116, 116, 116);
+}
+
+@media (max-width:950px) {
+    .img-welcome {
+        height: 25vh;
+    }
+}
+
+@media (max-width:750px) {
+    .img-welcome {
+        height: 15vh;
+    }
+}

@@ -1,0 +1,38 @@
+.content-wrapper{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.options{
+    padding: 8px;
+}
+.right{
+    text-align: right;
+    padding-right: 10px;
+}
+.title{
+    min-width: 30px;
+    width: 30px;
+    padding: 0 5px;
+}
+.name-data{
+    min-width: 160px;
+    width: 250px;
+}
+h2{
+    font-size: 16px;
+    font-weight: 800;
+}
+/* /Filtros */
+@media (max-width:950px){
+    .content-wrapper{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width:750px){
+    .content-wrapper{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}

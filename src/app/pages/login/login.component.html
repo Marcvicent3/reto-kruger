@@ -1,0 +1,40 @@
+<div class="login-page">
+    <div class="login-box">
+        <div class="login-logo">
+          <img src="assets/SVG/krugerCorp.svg" alt="">
+        </div>
+        <!-- /.login-logo -->
+        <div class="card">
+          <div class="card-body login-card-body">
+            <p class="login-box-msg">Inicie la sesión para comenzar</p>
+      
+            <form action="../../index3.html" method="post">
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" [(ngModel)]="usuario" name="usuario" placeholder="Usuario">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-envelope"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <input type="password" class="form-control" [(ngModel)]="password" name="password" placeholder="Contraseña">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-lock"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <!-- /.col -->
+                <div class="col-6">
+                  <button type="submit" (click)="login()" class="btn btn-primary">Iniciar Sesión</button>
+                </div>
+                <!-- /.col -->
+              </div>
+            </form>
+          </div>
+          <!-- /.login-card-body -->
+        </div>
+      </div>
+</div>

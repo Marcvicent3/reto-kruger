@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  url: 'http://localhost:8080/reto-kruger/restServices/index.php',
+
+  httpRequests: {
+    empleadoIngresar: '/EmpleadoService/empleadoIngresar',
+    empleadoListar: '/EmpleadoService/empleadoListar',
+    empleadoEliminar: '/EmpleadoService/empleadoEliminar',
+    empleadoBuscar: '/EmpleadoService/empleadoBuscar',
+    usuarioLogin: '/EmpleadoService/usuarioLogin'
+  }
+
 };
 
 /*

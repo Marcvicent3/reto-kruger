@@ -1,0 +1,133 @@
+.content-wrapper{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.pestania{
+    display: flex;
+    margin-top: -10px;
+    padding: 0 15px 8px;
+}
+
+.pestania button{
+    width: 50%;
+    text-align: center;
+    padding: 3px 0;
+    border: 1px solid lightslategray;
+    border-radius: 10px 10px 0 0;
+    outline: none;
+    font-weight: bolder;
+    font-size: 16px;
+}
+.pestania button:hover{
+    background-color: #CCC
+}
+.btn-selected{
+    background-color: lightslategray;
+    color: white;
+}
+.tab{
+    padding: 10px 0;
+    display: none;
+    animation: aparecer .5s;
+}
+.tab1{
+    display: block;
+}
+.options{
+    padding: 8px;
+}
+.right{
+    text-align: right;
+    padding-right: 10px;
+}
+.title{
+    min-width: 30px;
+    width: 30px;
+    padding: 0 5px;
+}
+.name-data{
+    min-width: 160px;
+    width: 250px;
+}
+h2{
+    font-size: 16px;
+    font-weight: 800;
+}
+/* Filtros */
+.filters{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1.5px solid #C0C0C0;
+}
+.select-filter{
+    width: 20%;
+    min-width: 150px;
+}
+.select-filter label{
+    margin-right: 10px;
+    padding-top: 5px;
+}
+
+.select-filter select{
+    cursor: pointer;
+}
+
+.searcher{
+    width: 50%;
+}
+.searcher button{
+    cursor: pointer;
+}
+/* /Filtros */
+@media (max-width:950px){
+    .content-wrapper{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .pestania button{
+        font-size: 14px;
+    }
+    .select-filter label, select{
+        font-size: 13px;
+        height: 28px;
+    }
+    .searcher input,button{
+        font-size: 13px;
+        height: 28px;
+    }
+}
+
+@media (max-width:750px){
+    .content-wrapper{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .pestania button{
+        font-size: 13px;
+    }
+    .select-filter label, select{
+        font-size: 12px;
+        height: 25px;
+    }
+    .searcher input,button{
+        font-size: 12px;
+        height: 25px;
+    }
+}
+
+@media (max-width:650px){
+    .pestania button{
+        font-size: 12px;
+    }
+    .select-filter label, select{
+        font-size: 11px;
+        height: 22px;
+    }
+    .searcher input,button{
+        font-size: 12px;
+        height: 25px;
+    }
+}

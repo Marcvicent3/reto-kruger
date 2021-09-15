@@ -1,0 +1,85 @@
+<div class="wrapper">
+    <app-navigation-bar></app-navigation-bar>
+    <app-side-bar></app-side-bar>
+    <div class="content-wrapper">
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0">Hola, </h1>
+                    </div>
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item"><a routerLink="/Index">Home</a></li>
+                            <li class="breadcrumb-item active">Tus datos</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div id="set-user" class="tab card-body table-responsive p-0">
+                <h2>Datos del Usuario</h2>
+                <table class="table table-striped table-valign-middle">
+                    <tbody>
+                        <tr>
+                            <td class="bold title">Nombres:</td>
+                            <td class="name-data"><input type="text" [(ngModel)]="employeeNew.Nombres" class="input-full"></td>
+                            <td class="bold title">Apellidos:</td>
+                            <td class="name-data"><input type="text" [(ngModel)]="employeeNew.Apellidos" class="input-full"></td>
+                        </tr>
+                        <tr>
+                            <td class="bold title">Cédula:</td>
+                            <td class="name-data"><input type="text" [(ngModel)]="employeeNew.Cedula" class="input-full"></td>
+                            <td class="bold title">Correo electrónico:</td>
+                            <td class="name-data"><input type="text" [(ngModel)]="employeeNew.Correo_Electronico" class="input-full"></td>
+                        </tr>
+                        <tr>
+                            <td class="bold title">Usuario:</td>
+                            <td class="name-data"><input type="text" [(ngModel)]="employeeNew.Usuario" class="input-full"></td>
+                            <td class="bold title">Contraseña:</td>
+                            <td class="name-data"><input type="text" [(ngModel)]="employeeNew.Password" class="input-full"></td>
+                        </tr>
+                        <tr>
+                            <td class="bold title">Fecha Nacimiento:</td>
+                            <td class="name-data"> <input type="date" [(ngModel)]="employeeNew.Fecha_Nacimiento" class="input-full">
+                            <td class="bold title">Dirección Domicilio:</td>
+                            <td class="name-data"><input type="text" [(ngModel)]="employeeNew.Domicilio" class="input-full"></td>
+                        </tr>
+                        <tr>
+                            <td class="bold title">Teléfono Móvil:</td>
+                            <td class="name-data"><input type="text" [(ngModel)]="employeeNew.Celular" class="input-full"></td>
+                            <td class="bold title">Estado de Vacunación:</td>
+                            <td class="name-data"> <select name="estado-vacuna" [(ngModel)]="employeeNew.Estado_Vacunacion" class="input-full">
+                                    <option value="1">Vacunado</option>
+                                    <option value="0">No Vacunado</option>
+                                </select>
+                        </tr>
+                        <tr>
+                            <td class="bold title">Tipo de Vacuna:</td>
+                            <td class="name-data"><select name="tipo-vacuna" [(ngModel)]="employeeNew.Tipo_Vacuna" [disabled]="employeeNew.Estado_Vacunacion == false" class="input-full">
+                                <option value="Sputnik">Sputnik</option>
+                                <option value="AstraZeneca">AstraZeneca</option>
+                                <option value="Pfizer">Pfizer</option>
+                                <option value="Jhonson&Jhonson">Jhonson&Jhonson</option>
+                            </select></td>
+                            <td class="bold title">Fecha de vacunación: </td>
+                            <td class="name-data"> <input type="date" [(ngModel)]="employeeNew.Fecha_Vacunacion" [disabled]="employeeNew.Estado_Vacunacion == false" class="input-full">
+                        </tr>
+                        <tr>
+                            <td class="bold title">Número de dosis:</td>
+                            <td class="name-data"><select name="numero-dosis" [(ngModel)]="employeeNew.Numero_Dosis" [disabled]="employeeNew.Estado_Vacunacion == false" class="input-full">
+                                <option value="1">Primera</option>
+                                <option value="2">Segunda</option>
+                            </select></td>
+                            <td colspan="2"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="input-full right"><button class="btn btn-primary btn-sm" (click)="dataValidation()" title="Save">Save</button></div>
+            </div>
+        </div>
+    </div>
+
+    <app-footer></app-footer>
+</div>
